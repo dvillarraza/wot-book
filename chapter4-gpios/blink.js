@@ -1,7 +1,8 @@
 var onoff = require('onoff'); //#A
 
 var Gpio = onoff.Gpio,
-  led = new Gpio(4, 'out'), //#B
+  //led = new Gpio(4, 'out'), //#B
+  led = new Gpio(23, 'out'), //#B
   interval;
 
 interval = setInterval(function () { //#C
